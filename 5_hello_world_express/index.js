@@ -41,7 +41,7 @@ app.get('/funcionarios/:cpf', (req, res) => {
 
 app.get("/pessoas/:nome/:empresa", (req, res) => {
     const { nome, empresa } = req.params;
-    res.send(`${nome}, ${empresa}`)
+    res.send(`${nome} e ${empresa}`)
 });
 
 app.get('/imc/:peso/:altura', (req, res) => {
